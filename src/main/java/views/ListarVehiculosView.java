@@ -15,6 +15,7 @@ public class ListarVehiculosView extends javax.swing.JFrame {
     public ListarVehiculosView() {
         initComponents();
         listarVehiculos();
+        this.setDefaultCloseOperation(IngresarVehiculosView.DISPOSE_ON_CLOSE);
     }
     private void listarVehiculos(){
         ArrayList<VehiculoViewModel> vehiculos = Controlador.getVehiculos();
